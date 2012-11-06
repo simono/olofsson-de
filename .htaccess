@@ -1,0 +1,9 @@
+DirectoryIndex index.html index.php
+AddDefaultCharset UTF-8
+
+AddType application/x-httpd-php5 .php
+
+# http://no-www.org
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
