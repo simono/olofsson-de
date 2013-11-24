@@ -1,134 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Homepage of Simon Olofsson</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Homepage of Simon Olofsson">
-		<meta name="author" content="Simon Olofsson">
+<head>
+<meta charset="utf-8">
+<title>Homepage of Simon Olofsson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Homepage of Simon Olofsson">
+<meta name="author" content="Simon Olofsson">
 
-		<!-- Le styles -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<style type="text/css">
-			body {
-				padding-top: 20px;
-				padding-bottom: 40px;
-			}
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/jumbotron-narrow.css" rel="stylesheet">
+<link href="css/olofsson-de.css" rel="stylesheet">
 
-			/* Custom container */
-			.container-narrow {
-				margin: 0 auto;
-				max-width: 700px;
-			}
-			.container-narrow > hr {
-				margin: 30px 0;
-			}
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
-			/* Main marketing message and sign up button */
-			.jumbotron {
-				margin: 30px 0;
-				text-align: center;
-			}
-			.jumbotron h1 {
-				font-size: 72px;
-				line-height: 1;
-			}
-			.jumbotron .lead {
-				text-align: left;
-			}
-			.jumbotron .btn {
-				font-size: 21px;
-				padding: 14px 24px;
-			}
-			.jumbotron .media-object {
-				margin-bottom: 15px;
-			}
+<!-- Fav icon -->
+<link rel="shortcut icon" href="favicon.ico">
+</head>
 
-			/* Supporting marketing content */
-			.marketing {
-				margin: 60px 0;
-			}
-			.marketing p + h4 {
-				margin-top: 28px;
-			}
-			.marketing .btn {
-				width: 8em;
-			}
-		</style>
-		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<body>
 
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+<div class="container">
 
-		<!-- Fav icon -->
-		<link rel="shortcut icon" href="favicon.ico">
-	</head>
+    <div class="header">
+	<h3 class="text-muted">olofsson.de</h3>
+    </div>
 
-	<body>
+    <div id="main" class="jumbotron">
+	<h1>Welcome!</h1>
+	<div class="media">
+	    <div class="pull-left">
+		<img class="media-object img-rounded" alt="Photo of Simon Olofsson" src="img/Simon.jpg">
+		<a href="https://twitter.com/solofs" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @solofs</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	    </div>
+	    <div class="media-body">
+		<p class="lead">
+		This is the Homepage of Simon Olofsson. I'm a Software Developer
+		from Cologne, Germany.<br />
+		I recently finished my Master's degree at the FernUniversität in
+		Hagen. In my
+		<a href="http://www.fernuni-hagen.de/ps/arbeiten/olofsson.shtml">
+		    Master's thesis</a>, I developed
+		<a href="http://simono.github.com/scala-orp/">an annotation-based
+		    extension of Scala for Object-Relational Programming</a>.<br />
+		From time to time I'm working on some Open Source Projects, see the
+		links below.<br />
+		Feel free to <a href="mailto:simon@olofsson.de">contact me</a> at
+		any time :-)
+		</p>
+	    </div>
+	</div>
+    </div>
 
-		<div class="container-narrow">
+    <div class="row marketing">
+	<div class="col-md-4">
+	    <p><a class="btn btn-lg btn-default" href="http://www.xing.com/profile/Simon_Olofsson">XING &raquo;</a></p>
+	    <p><a class="btn btn-lg btn-success" href="http://de.linkedin.com/in/solofs">LinkedIn &raquo;</a></p>
+	</div>
 
-			<div class="masthead">
-				<h3 class="muted">olofsson.de</h3>
-			</div>
+	<div class="col-md-4">
+	    <p><a class="btn btn-lg btn-info" href="https://github.com/simono">GitHub &raquo;</a></p>
+	    <p><a class="btn btn-lg btn-primary" href="https://launchpad.net/~simono">Launchpad &raquo;</a></p>
+	</div>
 
-			<hr>
+	<div class="col-md-4">
+	    <p><a class="btn btn-lg btn-warning" href="https://speakerdeck.com/simono">Speaker Deck &raquo;</a></p>
+	    <p><a class="btn btn-lg btn-danger" href="http://lanyrd.com/profile/solofs/">Lanyrd &raquo;</a></p>
+	</div>
+    </div>
 
-			<div class="jumbotron">
-				<h1>Welcome!</h1>
-				<div class="media">
-					<div class="pull-left">
-						<img class="media-object img-rounded" alt="Photo of Simon Olofsson" src="img/Simon.jpg">
-						<a href="https://twitter.com/solofs" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @solofs</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					</div>
-					<div class="media-body">
-						<p class="lead">
-						This is the Homepage of Simon Olofsson. I'm a Software Developer
-						from Cologne, Germany.<br />
-						I recently finished my Master's degree at the FernUniversität in
-						Hagen. In my
-						<a href="http://www.fernuni-hagen.de/ps/arbeiten/olofsson.shtml">
-							Master's thesis</a>, I developed
-						<a href="http://simono.github.com/scala-orp/">an annotation-based
-							extension of Scala for Object-Relational Programming</a>.<br />
-						From time to time I'm working on some Open Source Projects, see the
-						links below.<br />
-						Feel free to <a href="mailto:simon@olofsson.de">contact me</a> at
-						any time :-)
-						</p>
-					</div>
-				</div>
-			</div>
+    <div class="footer">
+	<p>&copy; Simon Olofsson 2013</p>
+    </div>
 
-			<hr>
+</div> <!-- /container -->
 
-			<div class="row-fluid marketing">
-				<div class="span4">
-					<p><a class="btn btn-large" href="http://www.xing.com/profile/Simon_Olofsson">XING &raquo;</a></p>
-					<p><a class="btn btn-large btn-inverse" href="http://de.linkedin.com/in/solofs">LinkedIn &raquo;</a></p>
-				</div>
-
-				<div class="span4">
-					<p><a class="btn btn-large btn-info" href="https://github.com/simono">GitHub &raquo;</a></p>
-					<p><a class="btn btn-large btn-primary" href="https://launchpad.net/~simono">Launchpad &raquo;</a></p>
-				</div>
-
-				<div class="span4">
-					<p><a class="btn btn-large btn-warning" href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?archive=both;correspondent=simon%40olofsson.de">Debian &raquo;</a></p>
-					<p><a class="btn btn-large btn-danger" href="http://www.freshports.org/search.php?stype=maintainer&amp;query=simon@olofsson.de">FreshPorts &raquo;</a></p>
-				</div>
-			</div>
-
-			<hr>
-
-			<div class="footer">
-				<p>&copy; Simon Olofsson 2013</p>
-			</div>
-
-		</div> <!-- /container -->
-
-	</body>
+</body>
 </html>

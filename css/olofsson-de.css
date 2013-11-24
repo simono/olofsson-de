@@ -1,0 +1,15 @@
+#main {
+  padding: 20px;
+}
+
+.jumbotron .media-object {
+  margin-bottom: 15px;
+}
+
+.jumbotron .lead {
+  text-align: left;
+}
+
+.marketing .btn {
+  width: 10em;
+}
