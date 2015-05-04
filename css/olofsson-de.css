@@ -1,15 +1,43 @@
-#main {
-  padding: 20px;
+html {
+  background-image: url('../img/sunflowers.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255, 213, 4, 0.8);
 }
 
-.jumbotron .media-object {
-  margin-bottom: 15px;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
 }
 
-.jumbotron .lead {
-  text-align: left;
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 10px;
 }
 
-.marketing .btn {
-  width: 10em;
+.images img:not(:first-child) {
+  display: none;
+}
+
+img {
+  border-radius: 50%;
+}
+
+a {
+  color: rgba(255, 213, 4, 0.8);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
