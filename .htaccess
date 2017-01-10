@@ -1,7 +1,4 @@
-DirectoryIndex index.html index.php
 AddDefaultCharset UTF-8
-
-AddType application/x-httpd-php5 .php
 
 # http://no-www.org
 RewriteEngine On
