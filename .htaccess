@@ -4,3 +4,5 @@ AddDefaultCharset UTF-8
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^meintragebaby\.de$ [NC]
+RewriteRule ^.*$ https://www.facebook.com/meintragebaby/ [R,L]
