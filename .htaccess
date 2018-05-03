@@ -3,7 +3,7 @@ AddDefaultCharset UTF-8
 # http://no-www.org
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteRule ^(.*)$ %{REQUEST_SCHEME}://%1/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^meintragebaby\.de$ [NC]
 RewriteCond %{REQUEST_URI} !^/meintragebaby/
