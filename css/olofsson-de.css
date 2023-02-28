@@ -1,10 +1,10 @@
 html {
-  background-image: url('../img/sunflowers.jpg');
+  background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgba(255, 213, 4, 0.6);
+  background-color: rgba(109, 143, 164);
 }
 
 body {
@@ -18,26 +18,8 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   padding: 10px;
-}
-
-.images img:not(:first-child) {
-  display: none;
-}
-
-img {
-  border-radius: 50%;
-}
-
-a {
-  color: rgba(255, 213, 4, 0.8);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
