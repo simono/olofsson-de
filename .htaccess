@@ -1,12 +1,12 @@
 AddDefaultCharset UTF-8
 
-# http://no-www.org
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ %{REQUEST_SCHEME}://%1/$1 [R=301,L]
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
 Header set X-Content-Type-Options "nosniff"
