@@ -8,7 +8,7 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-Header set Referrer-Policy "no-referrer"
-Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
-Header set X-Content-Type-Options "nosniff"
-Header set Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"
+Header always set Referrer-Policy "no-referrer"
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"
