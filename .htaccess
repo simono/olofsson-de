@@ -3,7 +3,7 @@ AddDefaultCharset UTF-8
 RewriteEngine On
 
 RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301]
 
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
